@@ -1,2 +1,3 @@
-# valentine-cafe-projeto-dupla
-O Valentine Café foi criado para casais que queiram relaxar em um ambiente acolhedor!
+# Projeto Sesi Restaurante
+Aula de Desenvolvimento de Aplicativos
+Restaurante
