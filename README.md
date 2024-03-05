@@ -1,3 +1,4 @@
 # Projeto Sesi Restaurante
 Aula de Desenvolvimento de Aplicativos
-Restaurante
+Restaurante Valentine Café
+Projeto em Dupla - Rafael e Laura
