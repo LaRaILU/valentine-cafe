@@ -1,0 +1,8 @@
+[
+    {
+        "nome": "Pratos",
+        "itens": [
+            {"nome": "Prato do Dia", "preco": 19.90}
+        ]
+    }
+]

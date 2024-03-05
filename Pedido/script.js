@@ -1,22 +1,4 @@
 
-const CARDAPIO = [
-    [ // Pratos
-        14.90, // Prato do Dia
-        19.90, // Macarronofe
-        22.90  // Lasanha
-    ],
-    [ // Bebidas
-        5.99, // Refri
-        6.99, // Suco de Laranja
-        3.50  // Água
-    ],
-    [ // Sobremesas
-        9.99, // Sorvete
-        6.99, // Pudim
-        9.99  // Torta de Limão
-    ]
-]
-
 function modalErrorClose() {
     document.querySelector('#error').style.display = 'none';
     document.querySelector('#error').animate("spinShow")
@@ -70,4 +52,16 @@ function calcularTotal() {
 function fazerPedido() {
     
     swal("Pedido Realizado!", `Preço: R$ ${calcularTotal().toFixed(2)}`, "success");
+}
+
+const hydrate = async () => {
+    const CARDAPIO = await (await fetch('/cardapio.json')).json()
+
+    CARDAPIO.forEach(categoria => {
+        categoriaSelect = document.createElement('select');
+        categoriaSelect.classList.add('form-select');
+        categoriaSelect.classList.add('categoria');
+        categoriaSelect.onchange = calcularTotal;
+        
+    })
 }
