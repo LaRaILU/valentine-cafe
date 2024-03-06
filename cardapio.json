@@ -22,5 +22,53 @@
             }
             
         ]
+    },
+    {
+        "nome": "Bebidas",
+        "itens": [
+            {
+                "nome": "Coca Cola Lata",
+                "desc": "Prato do Dia com arroz, feijão e bife.", 
+                "preco": 14.90,
+                "img_card": "../img/item/refrigerante.webp"
+            },
+            {
+                "nome": "Suco de Laranja ",
+                "desc": "Prato do Dia com arroz, feijão e bife.", 
+                "preco": 19.90,
+                "img_card": "../img/item/suco.webp"
+            },
+            {
+                "nome": "Água Mineral 500ml",
+                "desc": "Lasanha de queijo e presunto a bolonhesa.", 
+                "preco": 22.90,
+                "img_card": "../img/item/agua.webp"
+            }
+            
+        ]
+    },
+    {
+        "nome": "Sobremesa",
+        "itens": [
+            {
+                "nome": "Sorvete",
+                "desc": "Prato do Dia com arroz, feijão e bife.", 
+                "preco": 9.99,
+                "img_card": "../img/item/sorvete.webp"
+            },
+            {
+                "nome": "Pudim de Leite",
+                "desc": "Prato do Dia com arroz, feijão e bife.", 
+                "preco": 19.90,
+                "img_card": "../img/item/pudim.webp"
+            },
+            {
+                "nome": "Torta de Limao",
+                "desc": "Lasanha de queijo e presunto a bolonhesa.", 
+                "preco": 22.90,
+                "img_card": "../img/item/tortadelimao.webp"
+            }
+            
+        ]
     }
 ]

@@ -1,4 +1,6 @@
-function muda_cardapio(n) {
+function muda_cardapio(btn) {
+    var n = btn.getAttribute('data-cardapio-id');
+
     var cardapios = document.querySelectorAll('.cardapio');
 
     cardapios.forEach(cardapio => {
@@ -14,9 +16,21 @@ const adicionarSacola = (item) => {
 
 const hydrate = async () => {
     const CARDAPIO = await (await fetch('/cardapio.json')).json()
-    const contentDiv = document.querySelector('.content');
+    
+    cardapioSwitcher = document.createElement('div');
+    cardapioSwitcher.classList.add('btn-group');
+    cardapioSwitcher.setAttribute('role', 'btn-group');
+    cardapioSwitcher.setAttribute('aria-label', 'Basic radio toggle button group');
+    document.body.appendChild(cardapioSwitcher);
 
+    contentDiv = document.createElement('div');
+    contentDiv.classList.add('content');
+    document.body.appendChild(contentDiv);
+
+    var i = -1;
     CARDAPIO.forEach(categoria => {
+        i += 1;
+
         console.log("Categoria: ", categoria.nome);
 
         cardapioDiv = document.createElement('div');
@@ -66,5 +80,24 @@ const hydrate = async () => {
         cardapioDiv.appendChild(wrapCardsDiv);
 
         contentDiv.appendChild(cardapioDiv);
+
+        btnMudaCardapio = document.createElement('input');
+        btnMudaCardapio.classList.add('btn-check');
+        btnMudaCardapio.setAttribute('type', 'radio');
+        btnMudaCardapio.setAttribute('name', 'cardapio');
+        btnMudaCardapio.setAttribute('autocomplete', 'off');
+        btnMudaCardapio.id = "btncardapio_"+categoria.nome;
+        btnMudaCardapio.setAttribute('data-cardapio-id', i);
+        btnMudaCardapio.setAttribute('onclick', 'muda_cardapio(this)');
+        cardapioSwitcher.appendChild(btnMudaCardapio);
+        btnMudaCardapioLabel = document.createElement('label');
+        btnMudaCardapioLabel.classList.add('btn');
+        btnMudaCardapioLabel.classList.add('btn-outline-danger');
+        btnMudaCardapioLabel.textContent = categoria.nome;
+        btnMudaCardapioLabel.setAttribute('for', 'btncardapio_'+categoria.nome);
+        cardapioSwitcher.appendChild(btnMudaCardapioLabel);
+
+
     })
 }
+window.addEventListener('load', hydrate)
