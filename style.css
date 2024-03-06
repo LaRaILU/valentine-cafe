@@ -8,8 +8,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 100 vw;
-
+    width: 100vw;
     transition: all 500ms ease-in-out;
     overflow: hidden;
 }
@@ -17,6 +16,7 @@ body {
 .wrap-all {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 3vw;
@@ -30,11 +30,12 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2vh;
+    padding: 1rem;
 }
 
 .wrap-p > p {
     font-size: 8ch;
-    font-weight: 700;
+    font-weight: 800;
     color: antiquewhite;
     border-bottom: #be4a2a 0px solid;
 

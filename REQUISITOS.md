@@ -1,7 +1,7 @@
 # Requisitos
 
 ### Laura
-- [ ] Menu com animação, hover e background-image
+- [X] Menu com animação, hover e background-image
 - [ ] Showroom de produtos, com bootstrap 5, com 25 produtos em 5 grupos
 
 ### Rafael

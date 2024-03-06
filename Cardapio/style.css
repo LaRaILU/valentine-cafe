@@ -4,14 +4,14 @@
 }
 
 body{
-    padding: 1rem;
     overflow-x: hidden;
     overflow-y: auto;
-    
-}
-body::after {
-    background-image: url("https://picsum.photos/2000");
-
+    background-image: url("../img/fundo4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #711d059f;
+    height: 100vh;
+    width: 100vw;
 }
 
 h1, h2{
@@ -25,8 +25,7 @@ h1, h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 6vh;
+    gap: 1rem;
 }
 
 .hidden {
@@ -49,8 +48,53 @@ h1, h2{
 }
 
 .content {
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
+    background-color: #711d059f;
+}
+
+.btn-danger{
+    background-color: #f07452 !important;
+    padding: .5rem;
+    align-items: center;
+    border: none;
+    
+}
+
+.btn-outline-danger{
+    background-color: #f07452;
+    color: antiquewhite;
+    padding: 0.5rem;
+    gap: 2rem;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline-danger:hover {
+    background-color:#f7582c !important;
+    border-color:rgb(255, 0, 0) !important;
+
+}
+
+.btn-outline-danger:checked {
+    background-color: blue !important;
+}
+
+.btn-group{
+    margin-left: 2rem;
+    background-color: #711d059f;
+    width: fit-content;
+    height: fit-content;
+}
+
+header{
+    width: 100vw;
+    height: 3.5rem;
+    background-color: #f07452;
+    position: fixed;
+    z-index: 999;
+    padding: 0.5rem;
+    align-items: center;
 }
