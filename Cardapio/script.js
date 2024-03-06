@@ -1,4 +1,6 @@
-function muda_cardapio(btn) {
+var CARDAPIO = []
+
+const muda_cardapio = (btn) => {
     var n = btn.getAttribute('data-cardapio-id');
 
     var cardapios = document.querySelectorAll('.cardapio');
@@ -8,6 +10,8 @@ function muda_cardapio(btn) {
     });
 
     cardapios[n].classList.remove('hidden');
+    
+    document.querySelector('#cardapio-titulo').textContent = CARDAPIO[n].nome;
 }
 
 const adicionarSacola = (item) => {
@@ -15,7 +19,7 @@ const adicionarSacola = (item) => {
 }
 
 const hydrate = async () => {
-    const CARDAPIO = await (await fetch('/cardapio.json')).json()
+    CARDAPIO = await (await fetch('/cardapio.json')).json()
     
     cardapioSwitcher = document.createElement('div');
     cardapioSwitcher.classList.add('btn-group');
@@ -36,9 +40,9 @@ const hydrate = async () => {
         cardapioDiv = document.createElement('div');
         cardapioDiv.classList.add('cardapio');
         
-        categoriaH2 = document.createElement('h2');
-        categoriaH2.textContent = categoria.nome;
-        cardapioDiv.appendChild(categoriaH2);
+        // categoriaH2 = document.createElement('h2');
+        // categoriaH2.textContent = categoria.nome;
+        // cardapioDiv.appendChild(categoriaH2);
 
         wrapCardsDiv = document.createElement('div')
         wrapCardsDiv.classList.add('wrap-cards')
