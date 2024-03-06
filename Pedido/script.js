@@ -54,14 +54,3 @@ function fazerPedido() {
     swal("Pedido Realizado!", `Preço: R$ ${calcularTotal().toFixed(2)}`, "success");
 }
 
-const hydrate = async () => {
-    const CARDAPIO = await (await fetch('/cardapio.json')).json()
-
-    CARDAPIO.forEach(categoria => {
-        categoriaSelect = document.createElement('select');
-        categoriaSelect.classList.add('form-select');
-        categoriaSelect.classList.add('categoria');
-        categoriaSelect.onchange = calcularTotal;
-        
-    })
-}
