@@ -6,10 +6,10 @@
 body{
     overflow-x: hidden;
     overflow-y: auto;
-    background-image: url("../img/fundo4.jpg");
+    background-image: url("../img/fundo5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: #711d059f; */
+    background-attachment: fixed;
     height: 100vh;
     width: 100vw;
 }
@@ -17,6 +17,10 @@ body{
 h1, h2{
     width: 100%;
     text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-size: 5ch;
+    font-weight: 200;
+    letter-spacing: .3rem;
 }
 
 .wrap-cards{
@@ -54,52 +58,45 @@ h1, h2{
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    /* background-color: #711d059f; */
 }
 
 .btn-danger{
-    background-color: #f07452 !important;
+    background-color: #9e0303;
     padding: .5rem;
     align-items: center;
-    border: none;
-    
+    border: none;  
+    font-family: "DM Serif Display", serif;
+}
+
+.btn-danger:hover{
+    background-color: #bd0303;
 }
 
 .btn-outline-danger{
-    background-color: #f07452;
+    background-color: #cc2f2f;
     color: antiquewhite;
     padding: 0.5rem;
     gap: 2rem;
-    transition: all .3s ease-in-out;
-}
-
-.btn-outline-danger:hover {
-    background-color:#f7582c !important;
-    border-color:rgb(255, 0, 0) !important;
-
-}
-
-.btn-outline-danger:checked {
-    background-color: blue !important;
+    font-family: "DM Serif Display", serif;
 }
 
 .btn-group{
     margin-left: 2rem;
-    background-color: #711d059f;
-    width: fit-content;
-    height: fit-content;
 }
 
 header{
     display: flex;
     width: 100vw;
     height: 3.5rem;
-    background-color: #f07452;
+    background-color: #9a0404;
     position: fixed;
     z-index: 999;
     padding: 0.5rem;
     align-items: center;
     justify-content: space-between;
+    font-family: "DM Serif Display", serif;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 #header-margin {
@@ -107,15 +104,14 @@ header{
 }
 
 #logo-header {
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
     position: fixed;
-    top: .5rem;
     left: 50vw;
     transform: translateX(-50%);
 }
 
 #cardapio-titulo {
     color:white;
-    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }

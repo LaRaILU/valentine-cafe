@@ -34,8 +34,10 @@ body {
 }
 
 .wrap-p > p {
-    font-size: 8ch;
+    font-family:"DM Serif Display", serif;
+    font-size: 10ch;
     font-weight: 800;
+    letter-spacing: .5rem;
     color: antiquewhite;
     border-bottom: #be4a2a 0px solid;
 
