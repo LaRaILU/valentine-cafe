@@ -58,6 +58,21 @@ const calcularTotal = () => {
     return total;
 }
 
+const itemBtnDelete = (btn) => {
+    var n = btn.getAttribute('data-item-id');
+
+    var sacolaRaw = localStorage.getItem('sacola');
+    if (sacolaRaw === null) {
+        sacolaRaw = "[]";
+    }
+    var sacola = JSON.parse(sacolaRaw);
+
+    sacola.splice(n, 1); // 2nd parameter means remove one item only
+    
+    localStorage.setItem('sacola', JSON.stringify(sacola));
+    hydrate();
+}
+
 const hydrate = () => {
 
     var sacolaRaw = localStorage.getItem('sacola');
@@ -69,9 +84,26 @@ const hydrate = () => {
     var itemListDiv = document.querySelector('.pedido-item-list');
     itemListDiv.innerHTML = "";
 
+    var itemi = -1;
     sacola.forEach(item => {
+        itemi += 1;
+
         itemDiv = document.createElement('div'); // itemDiv
         itemDiv.classList.add('item-div');
+
+        itemDeleteWrap = document.createElement('button');
+        itemDeleteWrap.classList.add('btn');
+        itemDeleteWrap.classList.add('btn-outline-danger');
+        itemDeleteWrap.classList.add('item-delete-btn');
+        itemDeleteWrap.setAttribute('data-item-id', itemi);
+        itemDeleteWrap.setAttribute('onclick', 'itemBtnDelete(this)');
+
+        itemDeleteBtn = document.createElement('span')
+        itemDeleteBtn.classList.add('material-symbols-outlined')
+        itemDeleteBtn.textContent = "delete";
+        
+        itemDeleteWrap.appendChild(itemDeleteBtn)
+        itemDiv.appendChild(itemDeleteWrap);
 
         itemImg = document.createElement('img'); /// itemImg
         itemImg.classList.add('item-img');

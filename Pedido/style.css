@@ -73,6 +73,7 @@ body {
 .item-div {
     display: flex;
     border: black 1px solid;
+    align-items: center;
     border-radius: .5rem;
     padding: .5rem;
     gap: 1rem;
@@ -90,4 +91,9 @@ body {
 }
 .item-nome {
     margin: 0;
+}
+
+.item-delete-btn {
+    width: 2rem;
+    height: 2rem;
 }

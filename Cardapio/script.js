@@ -70,9 +70,33 @@ const hydrate = async () => {
     cardapioSwitcher.setAttribute('aria-label', 'Basic radio toggle button group');
     document.body.appendChild(cardapioSwitcher);
 
+    btnTodoCardapio = document.createElement('input');
+    btnTodoCardapio.classList.add('btn-check');
+    btnTodoCardapio.setAttribute('type', 'radio');
+    btnTodoCardapio.setAttribute('name', 'cardapio');
+    btnTodoCardapio.setAttribute('autocomplete', 'off');
+    btnTodoCardapio.setAttribute('checked', 'checked');
+    btnTodoCardapio.id = "btncardapio-tudo";
+    btnTodoCardapio.onclick = () => {
+        document.querySelector('#cardapio-titulo').textContent = 'Cardápio';
+        document.querySelectorAll('.cardapio').forEach(cardapio => {
+            cardapio.classList.remove('hidden');
+        });
+    }
+    cardapioSwitcher.appendChild(btnTodoCardapio);
+    btnTodoCardapioLabel = document.createElement('label');
+    btnTodoCardapioLabel.classList.add('btn');
+    btnTodoCardapioLabel.classList.add('btn-outline-danger');
+    btnTodoCardapioLabel.classList.add('material-symbols-outlined');
+    btnTodoCardapioLabel.textContent = "apps";
+    btnTodoCardapioLabel.setAttribute('for', 'btncardapio-tudo');
+    cardapioSwitcher.appendChild(btnTodoCardapioLabel);
+
     contentDiv = document.createElement('div');
     contentDiv.classList.add('content');
     document.body.appendChild(contentDiv);
+
+    
 
     var i = -1;
     CARDAPIO.forEach(categoria => {
