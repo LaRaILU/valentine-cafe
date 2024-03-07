@@ -27,11 +27,11 @@
     </head>
     <body>
         <button
-            onclick="location.assign('/')"
+            onclick="location.assign('/Cardapio')"
             type="button"
             class="btn btn-danger"
         >
-            <span class="material-symbols-outlined"> arrow_back </span> Menu
+            <span class="material-symbols-outlined"> arrow_back </span> Cardapio
         </button>
         <div id="error" class="error-modal" style="display: none">
             <span id="error-content">Ola mundo</span>
@@ -45,7 +45,7 @@
             </button>
         </div>
 
-        <div class="nomeinput-div">
+        <div class="nomeinput-div hidden">
             <div class="mb-3">
                 <label for="nome-input" class="form-label">Nome</label>
                 <input
@@ -59,47 +59,14 @@
             <button onclick="comecar()" class="btn btn-danger">Começar</button>
         </div>
 
-        <div class="selects-div hidden">
+        <div class="pedido-div hidden">
             <h2>
-                Olá, <span id="nome-print"></span>, vamos começar a escolher sua
-                refeição.
+                Olá, <span id="nome-print"></span>! <button class="btn btn-link" onclick="localStorage.removeItem('nome'); location.reload()">Mudar Nome</button>
             </h2>
-            <h3>Pratos</h3>
-            <select
-                class="form-select"
-                aria-label="Default select example"
-                id="selectPrato"
-                onchange="calcularTotal()"
-            >
-                <option selected>Selecione um Prato</option>
-                <option value="1">R$ 14.90 - Prato do Dia</option>
-                <option value="2">R$ 19.90 - Macarronofe</option>
-                <option value="3">R$ 22.90 - Lasanha a Bolonhesa</option>
-            </select>
-            <h3>Bebida</h3>
-            <select
-                class="form-select"
-                aria-label="Default select example"
-                id="selectBebida"
-                onchange="calcularTotal()"
-            >
-                <option selected>Selecione uma Bebida</option>
-                <option value="1">R$ 5.99 - Coca Cola Latinha 350ml</option>
-                <option value="2">R$ 6.99 - Suco de Laranja Natural 450ml</option>
-                <option value="3">R$ 3.50 - Água Mineral (sem gás) 500ml</option>
-            </select>
-            <h3>Sobremesas</h3>
-            <select
-                class="form-select"
-                aria-label="Default select example"
-                id="selectSobremesa"
-                onchange="calcularTotal()"
-            >
-                <option selected>Selecione uma Sobremesa</option>
-                <option value="1">R$ 9.99 - Sorvete (Chocolate)</option>
-                <option value="2">R$ 6.99 - Pudim de Leite</option>
-                <option value="3">R$ 9.99 - Torta de Limão</option>
-            </select>
+
+            <div class="pedido-item-list">
+
+            </div>
 
             <div class="btn-group" role="group" aria-label="Controles">
                 <button
@@ -116,7 +83,7 @@
                     type="button"
                     onclick="fazerPedido()"
                 >
-                    <span class="badge text-bg-light" style="background-color: white; color: black" id="price-display">R$ 0.00</span>
+                    <span class="badge text-bg-light total-content" style="background-color: white; color: black" id="price-display">R$ 0.00</span>
                     Fazer Pedido
                     <span class="material-symbols-outlined">
                         arrow_forward

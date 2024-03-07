@@ -1,5 +1,15 @@
 var CARDAPIO = []
 
+// BootStrap Toasts
+
+var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+var toastList = toastElList.map(function (toastEl) {
+  return new bootstrap.Toast(toastEl, option)
+})
+
+//
+
+
 const muda_cardapio = (btn) => {
     var n = btn.getAttribute('data-cardapio-id');
 
@@ -14,11 +24,44 @@ const muda_cardapio = (btn) => {
     document.querySelector('#cardapio-titulo').textContent = CARDAPIO[n].nome;
 }
 
-const adicionarSacola = (item) => {
-    alert(item.nome+" adicionado na sacola! (fixme)");
+const adicionarSacola = async (item) => {
+    var sacolaPrev = localStorage.getItem('sacola');
+    if (sacolaPrev === null) {
+        sacolaPrev = "[]";
+    }
+    var sacola = await JSON.parse(sacolaPrev);
+    sacola.push(item);
+    localStorage.setItem('sacola', JSON.stringify(sacola));
+    
+    calcularTotal()
+    
+    alert(item.nome+" adicionado na sacola!");
+}
+
+const calcularTotal = () => {
+    var sacolaRaw = localStorage.getItem('sacola');
+    if (sacolaRaw === null) {
+        sacolaRaw = "[]";
+    }
+    var sacola = JSON.parse(sacolaRaw);
+
+    var total = 0;
+    sacola.forEach(item => {
+        total += item.preco
+    })
+
+    document.querySelectorAll('.total-content').forEach(elm => {
+        elm.textContent = "R$ "+total.toFixed(2);
+    })
+
+    return total;
 }
 
 const hydrate = async () => {
+    if(localStorage.getItem('nome') !== null) {
+        document.querySelector('#nome-print').textContent = localStorage.getItem('nome');
+    }
+
     CARDAPIO = await (await fetch('/cardapio.json')).json()
     
     cardapioSwitcher = document.createElement('div');
@@ -35,7 +78,7 @@ const hydrate = async () => {
     CARDAPIO.forEach(categoria => {
         i += 1;
 
-        console.log("Categoria: ", categoria.nome);
+        console.log("Categoria: ", categoria.nome, categoria.itens);
 
         cardapioDiv = document.createElement('div');
         cardapioDiv.classList.add('cardapio');
@@ -72,7 +115,6 @@ const hydrate = async () => {
             cardButton = document.createElement('a');
             cardButton.classList.add('btn');
             cardButton.classList.add('btn-danger');
-            cardButton.href = "#";
             cardButton.onclick = () => {adicionarSacola(item)};
             cardButton.textContent = "+ Adicionar na Sacola";
             cardBody.appendChild(cardButton);
@@ -103,5 +145,7 @@ const hydrate = async () => {
 
 
     })
+
+    calcularTotal();
 }
 window.addEventListener('load', hydrate)

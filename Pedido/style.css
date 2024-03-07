@@ -56,3 +56,38 @@ body {
     display: none !important;
 }
 
+
+.pedido-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50vw;
+}
+@media (width <= 800px) {
+    .pedido-div {
+        width: 95vw;
+    }
+}
+
+
+.item-div {
+    display: flex;
+    border: black 1px solid;
+    border-radius: .5rem;
+    padding: .5rem;
+    gap: 1rem;
+    margin: .5rem;
+}
+
+.item-img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.item-preco {
+    margin: 0;
+    font-weight: 800;
+}
+.item-nome {
+    margin: 0;
+}

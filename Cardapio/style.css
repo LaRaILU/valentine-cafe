@@ -9,7 +9,7 @@ body{
     background-image: url("../img/fundo4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #711d059f;
+    /* background-color: #711d059f; */
     height: 100vh;
     width: 100vw;
 }
@@ -40,6 +40,7 @@ h1, h2{
     }
 }
 
+
 .btn {
     display: flex;
     align-items: center;
@@ -53,7 +54,7 @@ h1, h2{
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    background-color: #711d059f;
+    /* background-color: #711d059f; */
 }
 
 .btn-danger{
@@ -90,6 +91,7 @@ h1, h2{
 }
 
 header{
+    display: flex;
     width: 100vw;
     height: 3.5rem;
     background-color: #f07452;
@@ -97,4 +99,23 @@ header{
     z-index: 999;
     padding: 0.5rem;
     align-items: center;
+    justify-content: space-between;
+}
+
+#header-margin {
+    height:4.5rem;
+}
+
+#logo-header {
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    top: .5rem;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+
+#cardapio-titulo {
+    color:white;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
 }
