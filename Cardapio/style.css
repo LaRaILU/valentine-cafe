@@ -77,11 +77,12 @@ h1, h2{
     color: antiquewhite;
     padding: 0.5rem;
     gap: 2rem;
-    font-family: "DM Serif Display", serif;
 }
 
 .btn-group{
     margin-left: 2rem;
+    margin-right: 2rem;
+    flex-wrap: wrap;
 }
 
 header{

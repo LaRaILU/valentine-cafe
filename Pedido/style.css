@@ -7,8 +7,44 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    /* justify-content: center; */
+    gap: 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: url("../img/fundo8.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "DM Serif Display", serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 3.5rem;
+    background-color: #9a0404;
+    position: fixed;
+    z-index: 999;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "DM Serif Display", serif;
+    top: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#header-margin {
+    height:3.5rem;
+}
+
+#logo {
+    max-height: 20rem;
+    max-width: 20rem;
+    width: 75vw;
 }
 
 .btn {
@@ -22,25 +58,50 @@ body {
     max-width: fit-content;
 }
 
+.btn-danger{
+    background-color: #c91b05;
+    border: #9e0303 1px solid;
+    color: antiquewhite;
+}
+
+.btn-outline-danger{
+    border: #9e0303 1px solid;
+    color: antiquewhite;
+}
+
+.btn-link{
+    color: antiquewhite;
+}
+
+.btn-link:hover{
+    color:#02eeff;
+}
+
+.form-label{
+    color: antiquewhite;
+    font-size: 2rem;
+}
+
 .error-modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: auto;
-    min-width: 50vh;
+    max-width: 90vw;
     height: auto;
-    padding: 1rem;
+    padding: 2rem;
     gap: 2rem;
 
-    background-color: #f09090;
-    border: #8b0000 1px solid;
-    color: #8b0000;
+    background-color: #9e0303;
+    border: #9e0303 1px solid;
+    color: antiquewhite;
 
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .error-modal-hidden {
     display: none !important;
@@ -72,7 +133,7 @@ body {
 
 .item-div {
     display: flex;
-    border: black 1px solid;
+    border: rgb(0, 0, 0) 1px solid;
     align-items: center;
     border-radius: .5rem;
     padding: .5rem;
