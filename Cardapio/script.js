@@ -35,7 +35,11 @@ const adicionarSacola = async (item) => {
     
     calcularTotal()
     
-    alert(item.nome+" adicionado na sacola!");
+    Toastify({
+        text: item.nome+" adicionado na sacola!", 
+        gravity: 'bottom', 
+        style: {background: "#cc2f2f"}
+    }).showToast()
 }
 
 const calcularTotal = () => {

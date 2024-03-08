@@ -36,7 +36,26 @@ function limparSelecao() {
 
 function fazerPedido() {
     
-    swal("Pedido Realizado!", `Preço: R$ ${calcularTotal().toFixed(2)}`, "success");
+    
+    var sacolaRaw = localStorage.getItem('sacola');
+    if (sacolaRaw === null) {
+        sacolaRaw = "[]";
+    }
+    var sacola = JSON.parse(sacolaRaw);
+    
+    var listaPedidos = "";
+
+    sacola.forEach(item => {
+        listaPedidos += `${item.nome} - R$ ${item.preco.toFixed(2)};`;
+        listaPedidos += ' ';
+    });
+
+    Swal.fire({
+        title: "Pedido Realizado!",
+        html: `${listaPedidos.replaceAll(';', '<br>')}<br><br> Preço: R$ ${calcularTotal().toFixed(2)}`,
+        type: 'success',
+        didClose: () => {location.assign(encodeURI(`https://wa.me/+5541999999999?text=${listaPedidos} | Total: ${calcularTotal().toFixed(2)} | Pedido feito ${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()} às ${new Date().getHours()}:${new Date().getMinutes()} por ${localStorage.getItem('nome')}`))}
+    }); 
 }
 
 const calcularTotal = () => {
