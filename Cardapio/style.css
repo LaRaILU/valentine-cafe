@@ -96,8 +96,8 @@ header{
     align-items: center;
     justify-content: space-between;
     font-family: "DM Serif Display", serif;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 #header-margin {

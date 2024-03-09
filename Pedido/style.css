@@ -107,12 +107,6 @@ header{
     display: none !important;
 }
 
-.selects-div {
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
-}
-
 .hidden {
     display: none !important;
 }
@@ -123,6 +117,8 @@ header{
     flex-direction: column;
     gap: 2rem;
     width: 50vw;
+    color: white;
+    padding-bottom: 5vh;
 }
 @media (width <= 800px) {
     .pedido-div {
@@ -133,12 +129,14 @@ header{
 
 .item-div {
     display: flex;
-    border: rgb(0, 0, 0) 1px solid;
+    border: #fff3 1px solid;
     align-items: center;
     border-radius: .5rem;
     padding: .5rem;
     gap: 1rem;
     margin: .5rem;
+    backdrop-filter: blur(20px);
+    background-color: #fff2;
 }
 
 .item-img {
