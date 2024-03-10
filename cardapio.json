@@ -1,6 +1,6 @@
 [
     {
-        "nome": "Pratos",
+        "nome": "Salgados",
         "itens": [
             {
                 "nome": "Hambúrguer",
@@ -17,7 +17,7 @@
             {
                 "nome": "Croissant Recheado",
                 "desc": "Croissant aberto e recheado com: Presunto Parma ou Filé em Tiras, Queijo Brie ou Parmesão, Alface ou Rúcula. Acompanha Legumes.", 
-                "preco": 11.90,
+                "preco": 11.50,
                 "img_card": "../img/salgado/croissant.jpg"
             },
             {
@@ -29,45 +29,110 @@
             {
                 "nome": "Tábua de Queijos",
                 "desc": "10 tipos de queijos diferentes, acompanhados de frutas da estação e castanhas. Não inclui bebida. Serve duas pessoas.", 
-                "preco": 9.90,
+                "preco": 23.90,
                 "img_card": "../img/salgado/tabua-queijo.jpg"
             },
             {
                 "nome": "Sanduíche",
                 "desc": "Sanduíche com atum, mix de folhas verdes, cebola e tomate. Confira opções para vegetarianos/veganos. Porção Individual.", 
-                "preco": 22.90,
+                "preco": 10.50,
                 "img_card": "../img/salgado/sanduiche.jpg"
             },
             {
                 "nome": "Mix de Salgadinhos",
                 "desc": "Mix de Salgadinhos de Festa (quibe, bolinha de queijo, mini pastel, coxinha), Onion Rings e Batata Frita. Porção para duas pessoas. ", 
-                "preco": 22.90,
+                "preco": 12.70,
                 "img_card": "../img/salgado/salgadinhos.jpg"
             }
         ]
     },
     {
-        "nome": "Sobremesa",
+        "nome": "Sobremesas",
         "itens": [
             {
-                "nome": "Sorvete",
-                "desc": "Prato do Dia com arroz, feijão e bife.", 
-                "preco": 9.99,
-                "img_card": "../img/item/sorvete.webp"
+                "nome": "Bolo",
+                "desc": "Pedaço de Bolo Individual 500g. Consultar Sabores.", 
+                "preco": 10.99,
+                "img_card": "../img/sobremesa/bolo.jpg"
+            },
+            {
+                "nome": "Brownie",
+                "desc": "Brownie de Chocolate Meio Amargo. Quatro pedaços.", 
+                "preco": 12.90,
+                "img_card": "../img/sobremesa/brownie.jpg"
+            },
+            {
+                "nome": "Tortas",
+                "desc": "Pedaço de Torta Individual 350g. Consultar Sabores.", 
+                "preco": 19.50,
+                "img_card": "../img/sobremesa/tortadelimao.webp"
+            },
+            {
+                "nome": "Cheesecake",
+                "desc": "Cheesecake Tradicional de Frutas Vermelhas. Pedaço Individual.", 
+                "preco": 15.50,
+                "img_card": "../img/sobremesa/cheesecake2.jpg"
+            },
+            {
+                "nome": "Tiramisu",
+                "desc": "Tiramisu Tradicional e Individual. Pedaço de 350g.", 
+                "preco": 19.00,
+                "img_card": "../img/sobremesa/tiramisu1.webp"
+            },
+            {
+                "nome": "Cookies",
+                "desc": "Cookies Tradicionais com Gotas de Cholate ao Leite. Quatro porções.", 
+                "preco": 10.99,
+                "img_card": "../img/sobremesa/cookies1.jpg"
+            },
+            {
+                "nome": "Cupcake",
+                "desc": "Cupcakes de 300g. Quatro porções. Consultar Sabores Disponíveis.", 
+                "preco": 14.99,
+                "img_card": "../img/sobremesa/cupcakes.jpg"
+            },
+            {
+                "nome": "Donut",
+                "desc": "Donuts com ou sem recheio. Quatro porções. Consultar sabores.", 
+                "preco": 16.90,
+                "img_card": "../img/sobremesa/donuts.jpg"
+            },
+            {
+                "nome": "Cinnamon Roll",
+                "desc": "Cinnamon Roll Tradicional com ou sem calda. Porção individual.", 
+                "preco": 14.50,
+                "img_card": "../img/sobremesa/cinnamon.jpg"
+            },
+            {
+                "nome": "Waffle",
+                "desc": "Waffle com calda Syrup, frutas da época e uma bola de Sorvete de Creme. Porção Individual.", 
+                "preco": 19.50,
+                "img_card": "../img/sobremesa/wafle.jpg"
+            },
+            {
+                "nome": "Mini Panquecas",
+                "desc": "Mini Panquecas Doces com frutas da época, calda (Syrup, Mel, Geleia). Seis Porções.", 
+                "preco": 19.50,
+                "img_card": "../img/sobremesa/minipanqueca.jpg"
+            },
+            {
+                "nome": "Mousse",
+                "desc": "Cheesecake Tradicional de Frutas Vermelhas. Pedaço Individual.", 
+                "preco": 19.50,
+                "img_card": "../img/sobremesa/mousse.jpg"
             },
             {
                 "nome": "Pudim de Leite",
-                "desc": "Prato do Dia com arroz, feijão e bife.", 
-                "preco": 19.90,
-                "img_card": "../img/item/pudim.webp"
+                "desc": "Cheesecake Tradicional de Frutas Vermelhas. Pedaço Individual.", 
+                "preco": 19.50,
+                "img_card": "../img/sobremesa/cheesecake2.jpg"
             },
             {
-                "nome": "Torta de Limao",
-                "desc": "Lasanha de queijo e presunto a bolonhesa.", 
-                "preco": 22.90,
-                "img_card": "../img/item/tortadelimao.webp"
+                "nome": "Sorvete",
+                "desc": "Cheesecake Tradicional de Frutas Vermelhas. Pedaço Individual.", 
+                "preco": 19.50,
+                "img_card": "../img/sobremesa/cheesecake2.jpg"
             }
-            
         ]
     },
     {
