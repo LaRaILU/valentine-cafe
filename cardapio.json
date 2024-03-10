@@ -111,27 +111,27 @@
             },
             {
                 "nome": "Mini Panquecas",
-                "desc": "Mini Panquecas Doces com frutas da época, calda (Syrup, Mel, Geleia). Seis Porções.", 
-                "preco": 19.50,
+                "desc": "Mini Panquecas Doces com frutas da época, calda (Syrup, Mel ou Geleia). Seis Porções.", 
+                "preco": 18.90,
                 "img_card": "../img/sobremesa/minipanqueca.jpg"
             },
             {
                 "nome": "Mousse",
-                "desc": "Cheesecake Tradicional de Frutas Vermelhas. Pedaço Individual.", 
-                "preco": 19.50,
+                "desc": "Mousse Cremoso (Maracujá, Morango, Chocolate). Porção Individual.", 
+                "preco": 14.50,
                 "img_card": "../img/sobremesa/mousse.jpg"
             },
             {
                 "nome": "Pudim de Leite",
-                "desc": "Cheesecake Tradicional de Frutas Vermelhas. Pedaço Individual.", 
-                "preco": 19.50,
-                "img_card": "../img/sobremesa/cheesecake2.jpg"
+                "desc": "Pudim de Leite Tradicional. Pedaço Individual.", 
+                "preco": 12.90,
+                "img_card": "../img/sobremesa/pudim.webp"
             },
             {
                 "nome": "Sorvete",
-                "desc": "Cheesecake Tradicional de Frutas Vermelhas. Pedaço Individual.", 
-                "preco": 19.50,
-                "img_card": "../img/sobremesa/cheesecake2.jpg"
+                "desc": "Duas bolas de Sorvete: Creme, Flocos, Menta, Chocolate, Morango.", 
+                "preco": 10.00,
+                "img_card": "../img/sobremesa/sorvete.jpg"
             }
         ]
     },
@@ -139,23 +139,90 @@
         "nome": "Bebidas",
         "itens": [
             {
-                "nome": "Coca Cola Lata",
-                "desc": "Prato do Dia com arroz, feijão e bife.", 
-                "preco": 14.90,
-                "img_card": "../img/item/refrigerante.webp"
-            },
-            {
-                "nome": "Suco de Laranja ",
-                "desc": "Prato do Dia com arroz, feijão e bife.", 
-                "preco": 19.90,
-                "img_card": "../img/item/suco.webp"
-            },
-            {
                 "nome": "Água Mineral 500ml",
-                "desc": "Lasanha de queijo e presunto a bolonhesa.", 
+                "desc": "Garrafa de água mineral de 500ml", 
                 "preco": 22.90,
                 "img_card": "../img/bebida/agua.webp"
+            },
+            {
+                "nome": "Suco Natural",
+                "desc": "Suco natural batido na hora! Confira sabores.", 
+                "preco": 19.90,
+                "img_card": "../img/bebida/suco.webp"
+            },
+            {
+                "nome": "Chá Gelado",
+                "desc": "Chá Gelado a base de Monin ou Twinings. Confira Sabores.", 
+                "preco": 14.90,
+                "img_card": "../img/bebida/cha-gelado.webp"
+            },
+            {
+                "nome": "Café Gelado",
+                "desc": "Café Expresso, água com gás ou leite gelado e Monin. Confira Sabores.", 
+                "preco": 14.90,
+                "img_card": "../img/bebida/cafe-gelado.webp"
+            },
+            {
+                "nome": "Soda Italiana",
+                "desc": "Água com gás e Monin. Confira Sabores.", 
+                "preco": 14.90,
+                "img_card": "../img/bebida/soda.webp"
+            },
+            {
+                "nome": "Refrigerante",
+                "desc": "Coca Cola, Sprite, Fanta, Pepsi e Guaraná Antártica", 
+                "preco": 14.90,
+                "img_card": "../img/bebida/refrigerante.webp"
+            },
+            {
+                "nome": "Milkshake",
+                "desc": "Bebida batida a base de leite e sorvete. Confira Sabores.", 
+                "preco": 14.90,
+                "img_card": "../img/bebida/milkshake.webp"
+            },
+            {
+                "nome": "Café",
+                "desc": "Coado ou Expresso. Com leite ou sem.", 
+                "preco": 14.90,
+                "img_card": "../img/bebida/cafe.webp"
+            },
+            {
+                "nome": "Chá",
+                "desc": "Chá Twinings. Confira Sabores.", 
+                "preco": 14.90,
+                "img_card": "../img/bebida/cha.webp"
+            },
+            {
+                "nome": "Chocolate Quente",
+                "desc": "Bebida Quente a base de leite, achocolatado e chocolate ao leite em pedaços", 
+                "preco": 14.90,
+                "img_card": "../img/bebida/choc-quente.webp"
+            },
+            {
+                "nome": "Vinho",
+                "desc": "Seleções Argentinas, Portuguesas, Espanholas e Chilenas. Confira os rótulos.", 
+                "preco": 14.90,
+                "img_card": "../img/bebida/vinho.webp"
+            },
+            {
+                "nome": "Champagne",
+                "desc": "Seleções Francesas, Italianas, Espanholas e Portuguesas. Confira os rótulos.", 
+                "preco": 14.90,
+                "img_card": "../img/bebida/champanhe.webp"
+            },
+            {
+                "nome": "Cerveja",
+                "desc": "Brahma, Itaipava, Kaiser, Bohemia, Amstel, Heineken, Budweiser e Artesanais", 
+                "preco": 14.90,
+                "img_card": "../img/bebida/cerveja.webp"
+            },
+            {
+                "nome": "Chopp",
+                "desc": "Pilsen, IPA e Artesanais.", 
+                "preco": 14.90,
+                "img_card": "../img/bebida/chopp.webp"
             }
+            
             
         ]
     },
@@ -163,22 +230,87 @@
         "nome": "Combos",
         "itens": [
             {
-                "nome": "Água Mineral 500ml",
-                "desc": "Lasanha de queijo e presunto a bolonhesa.", 
+                "nome": "Sweet Tooth",
+                "desc": "Combo de duas Bebidas e duas Sobremesas. Veja opções e sabores disponíveis.", 
                 "preco": 22.90,
-                "img_card": "../img/bebida/agua.webp"
+                "img_card": "../img/combo/bebida+sobremesa.webp"
+            },
+            {
+                "nome": "Rapidinha",
+                "desc": "Combo de duas Bebidas e dois Salgados. Veja opções e sabores disponíveis.", 
+                "preco": 22.90,
+                "img_card": "../img/combo/salg+beb2.webp"
+            },
+            {
+                "nome": "Fitness",
+                "desc": "Combo de dez mini Torradas e duas Bebidas. Veja opções e sabores disponíveis.", 
+                "preco": 22.90,
+                "img_card": "../img/combo/torrada+bebida.webp"
+            },
+            {
+                "nome": "Banquete",
+                "desc": "Combo de duas Bebidas, dois Salgados e duas Sobremesas. Veja opções disponíveis.", 
+                "preco": 22.90,
+                "img_card": "../img/combo/salg+sob+beb.webp"
+            },
+            {
+                "nome": "Brunch",
+                "desc": "Combo de duas Bebidas, dois Salgados, duas Sobremesas e duas Torradas. Veja opções e sabores disponíveis.", 
+                "preco": 22.90,
+                "img_card": "../img/combo/salg+beb+sob.webp"
+            },
+            {
+                "nome": "Dia de Domingo",
+                "desc": "Combo de duas Bebidas Alcóolicas, dois Salgados, duas Sobremesas e duas Torradas. Veja opções disponíveis.", 
+                "preco": 22.90,
+                "img_card": "../img/combo/executivo.webp"
+            },
+            {
+                "nome": "Jantar a Dois",
+                "desc": "Dois Pratos Executivos (ver pratos disponíveis) e uma Garrafa de Vinho ou Champagne. Somente no período da Noite.", 
+                "preco": 22.90,
+                "img_card": "../img/combo/jantar.webp"
             }
-            
         ]
     },
     {
         "nome": "Especiais",
         "itens": [
             {
-                "nome": "Água Mineral 500ml",
-                "desc": "Lasanha de queijo e presunto a bolonhesa.", 
+                "nome": "Correio Elegante",
+                "desc": "Escreva uma carta ao seu amor e deixe que nós entregamos para você!", 
                 "preco": 22.90,
-                "img_card": "../img/bebida/agua.webp"
+                "img_card": "../img/especial/correio-elegante.webp"
+            },
+            {
+                "nome": "Flores",
+                "desc": "Aconteceu algo ruim no seu relacionamento? Algo bom? Flores são sempre a melhor opção!", 
+                "preco": 22.90,
+                "img_card": "../img/especial/flores.webp"
+            },
+            {
+                "nome": "Serenata",
+                "desc": "Deixe que seu amor se divirta com uma banda composta pelos nossos melhores... garçons!", 
+                "preco": 22.90,
+                "img_card": "../img/especial/serenata.webp"
+            },
+            {
+                "nome": "Primeiro Encontro",
+                "desc": "É o seu primeiro encontro? Compre nosso baralho de 150 Perguntas e nunca fique sem assunto!", 
+                "preco": 22.90,
+                "img_card": "../img/especial/encontro.webp"
+            },
+            {
+                "nome": "Pedido de Casamento",
+                "desc": "Hoje é o dia que você propõe? Então deixe o Valentine Café participar dessa ocasião especial! Peça aos nossos garçons o Especial Grande Dia e explique como você quer fazer o pedido!", 
+                "preco": 22.90,
+                "img_card": "../img/especial/pedido-casamento.webp"
+            },
+            {
+                "nome": "Surpresa",
+                "desc": "É o aniversário de alguém? É uma data importante? Peça um Bolo de Aniversário e um Parabéns Surpresa! Confirme os sabores disponíveis para o bolo e chame o garçom para o Parabéns.", 
+                "preco": 22.90,
+                "img_card": "../img/especial/surpresa.webp"
             }
             
         ]
