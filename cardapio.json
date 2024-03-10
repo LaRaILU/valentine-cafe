@@ -261,7 +261,7 @@
             },
             {
                 "nome": "Dia de Domingo",
-                "desc": "Combo de duas Bebidas Alcóolicas, dois Salgados, duas Sobremesas e duas Torradas. Veja opções disponíveis.", 
+                "desc": "Combo de duas Bebidas Alcoólicas, dois Salgados, duas Sobremesas e duas Torradas. Veja opções disponíveis.", 
                 "preco": 22.90,
                 "img_card": "../img/combo/executivo.webp"
             },
