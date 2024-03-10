@@ -6,43 +6,43 @@
                 "nome": "Hambúrguer",
                 "desc": "Pão brioche, Hambúrguer Angus 400g, Alface, Tomate, Maionese do Chef, Queijo Cheddar. Acompanha Batata Frita temperada.", 
                 "preco": 24.90,
-                "img_card": "../img/salgado/burguer.jpg"
+                "img_card": "../img/salgado/burguer.webp"
             },
             {
                 "nome": "Pizza",
                 "desc": "Pizza Individual. Sabores disponíveis: Portuguesa, Quatro Queijos, Frango com Catupiry, Calabresa, Atum e Vegetariana.", 
                 "preco": 22.90,
-                "img_card": "../img/salgado/pizza.jpg"
+                "img_card": "../img/salgado/pizza.webp"
             },
             {
                 "nome": "Croissant Recheado",
                 "desc": "Croissant aberto e recheado com: Presunto Parma ou Filé em Tiras, Queijo Brie ou Parmesão, Alface ou Rúcula. Acompanha Legumes.", 
                 "preco": 11.50,
-                "img_card": "../img/salgado/croissant.jpg"
+                "img_card": "../img/salgado/croissant.webp"
             },
             {
                 "nome": "Salada",
                 "desc": "Salada de Mix de Folhas Verdes, acompanhada de Patê de Grão de Bico, tomate e proteína adicional (frango/carne em tiras ou ovo).", 
                 "preco": 18.50,
-                "img_card": "../img/salgado/salada.jpg"
+                "img_card": "../img/salgado/salada.webp"
             },
             {
                 "nome": "Tábua de Queijos",
                 "desc": "10 tipos de queijos diferentes, acompanhados de frutas da estação e castanhas. Não inclui bebida. Serve duas pessoas.", 
                 "preco": 23.90,
-                "img_card": "../img/salgado/tabua-queijo.jpg"
+                "img_card": "../img/salgado/tabua-queijo.webp"
             },
             {
                 "nome": "Sanduíche",
                 "desc": "Sanduíche com atum, mix de folhas verdes, cebola e tomate. Confira opções para vegetarianos/veganos. Porção Individual.", 
                 "preco": 10.50,
-                "img_card": "../img/salgado/sanduiche.jpg"
+                "img_card": "../img/salgado/sanduiche.webp"
             },
             {
                 "nome": "Mix de Salgadinhos",
                 "desc": "Mix de Salgadinhos de Festa (quibe, bolinha de queijo, mini pastel, coxinha), Onion Rings e Batata Frita. Porção para duas pessoas. ", 
                 "preco": 12.70,
-                "img_card": "../img/salgado/salgadinhos.jpg"
+                "img_card": "../img/salgado/salgadinhos.webp"
             }
         ]
     },
@@ -53,13 +53,13 @@
                 "nome": "Bolo",
                 "desc": "Pedaço de Bolo Individual 500g. Consultar Sabores.", 
                 "preco": 10.99,
-                "img_card": "../img/sobremesa/bolo.jpg"
+                "img_card": "../img/sobremesa/bolo.webp"
             },
             {
                 "nome": "Brownie",
                 "desc": "Brownie de Chocolate Meio Amargo. Quatro pedaços.", 
                 "preco": 12.90,
-                "img_card": "../img/sobremesa/brownie.jpg"
+                "img_card": "../img/sobremesa/brownie.webp"
             },
             {
                 "nome": "Tortas",
@@ -71,7 +71,7 @@
                 "nome": "Cheesecake",
                 "desc": "Cheesecake Tradicional de Frutas Vermelhas. Pedaço Individual.", 
                 "preco": 15.50,
-                "img_card": "../img/sobremesa/cheesecake2.jpg"
+                "img_card": "../img/sobremesa/cheesecake2.webp"
             },
             {
                 "nome": "Tiramisu",
@@ -83,43 +83,43 @@
                 "nome": "Cookies",
                 "desc": "Cookies Tradicionais com Gotas de Cholate ao Leite. Quatro porções.", 
                 "preco": 10.99,
-                "img_card": "../img/sobremesa/cookies1.jpg"
+                "img_card": "../img/sobremesa/cookies1.webp"
             },
             {
                 "nome": "Cupcake",
                 "desc": "Cupcakes de 300g. Quatro porções. Consultar Sabores Disponíveis.", 
                 "preco": 14.99,
-                "img_card": "../img/sobremesa/cupcakes.jpg"
+                "img_card": "../img/sobremesa/cupcakes.webp"
             },
             {
                 "nome": "Donut",
                 "desc": "Donuts com ou sem recheio. Quatro porções. Consultar sabores.", 
                 "preco": 16.90,
-                "img_card": "../img/sobremesa/donuts.jpg"
+                "img_card": "../img/sobremesa/donuts.webp"
             },
             {
                 "nome": "Cinnamon Roll",
                 "desc": "Cinnamon Roll Tradicional com ou sem calda. Porção individual.", 
                 "preco": 14.50,
-                "img_card": "../img/sobremesa/cinnamon.jpg"
+                "img_card": "../img/sobremesa/cinnamon.webp"
             },
             {
                 "nome": "Waffle",
                 "desc": "Waffle com calda Syrup, frutas da época e uma bola de Sorvete de Creme. Porção Individual.", 
                 "preco": 19.50,
-                "img_card": "../img/sobremesa/wafle.jpg"
+                "img_card": "../img/sobremesa/wafle.webp"
             },
             {
                 "nome": "Mini Panquecas",
                 "desc": "Mini Panquecas Doces com frutas da época, calda (Syrup, Mel ou Geleia). Seis Porções.", 
                 "preco": 18.90,
-                "img_card": "../img/sobremesa/minipanqueca.jpg"
+                "img_card": "../img/sobremesa/minipanqueca.webp"
             },
             {
                 "nome": "Mousse",
                 "desc": "Mousse Cremoso (Maracujá, Morango, Chocolate). Porção Individual.", 
                 "preco": 14.50,
-                "img_card": "../img/sobremesa/mousse.jpg"
+                "img_card": "../img/sobremesa/mousse.webp"
             },
             {
                 "nome": "Pudim de Leite",
@@ -131,7 +131,7 @@
                 "nome": "Sorvete",
                 "desc": "Duas bolas de Sorvete: Creme, Flocos, Menta, Chocolate, Morango.", 
                 "preco": 10.00,
-                "img_card": "../img/sobremesa/sorvete.jpg"
+                "img_card": "../img/sobremesa/sorvete.webp"
             }
         ]
     },
