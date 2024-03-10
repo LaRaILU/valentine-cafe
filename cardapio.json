@@ -16,7 +16,7 @@
             },
             {
                 "nome": "Croissant Recheado",
-                "desc": "Croissant aberto e recheado com: Presunto Parma ou Filé em Tiras, Queijo Brie ou Parmesão, Alface ou Rúcula.", 
+                "desc": "Croissant aberto e recheado com: Presunto Parma ou Filé em Tiras, Queijo Brie ou Parmesão, Alface ou Rúcula. Acompanha Legumes.", 
                 "preco": 11.90,
                 "img_card": "../img/salgado/croissant.jpg"
             },
@@ -28,29 +28,22 @@
             },
             {
                 "nome": "Tábua de Queijos",
-                "desc": "10 tipos de queijos diferentes, acompanhados de frutas da estação e castanhas. Não inclue bebida. Serve duas pessoas.", 
+                "desc": "10 tipos de queijos diferentes, acompanhados de frutas da estação e castanhas. Não inclui bebida. Serve duas pessoas.", 
                 "preco": 9.90,
                 "img_card": "../img/salgado/tabua-queijo.jpg"
             },
             {
-                "nome": "Lasanha",
-                "desc": "Lasanha de queijo e presunto a bolonhesa.", 
+                "nome": "Sanduíche",
+                "desc": "Sanduíche com atum, mix de folhas verdes, cebola e tomate. Confira opções para vegetarianos/veganos. Porção Individual.", 
                 "preco": 22.90,
-                "img_card": "../img/item/lasanha.webp"
+                "img_card": "../img/salgado/sanduiche.jpg"
             },
             {
-                "nome": "Lasanha",
-                "desc": "Lasanha de queijo e presunto a bolonhesa.", 
+                "nome": "Mix de Salgadinhos",
+                "desc": "Mix de Salgadinhos de Festa (quibe, bolinha de queijo, mini pastel, coxinha), Onion Rings e Batata Frita. Porção para duas pessoas. ", 
                 "preco": 22.90,
-                "img_card": "../img/item/lasanha.webp"
-            },
-            {
-                "nome": "Lasanha",
-                "desc": "Lasanha de queijo e presunto a bolonhesa.", 
-                "preco": 22.90,
-                "img_card": "../img/item/lasanha.webp"
+                "img_card": "../img/salgado/salgadinhos.jpg"
             }
-            
         ]
     },
     {
