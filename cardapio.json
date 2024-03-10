@@ -3,16 +3,46 @@
         "nome": "Pratos",
         "itens": [
             {
-                "nome": "Prato do Dia",
-                "desc": "Prato do Dia com arroz, feijão e bife.", 
-                "preco": 14.90,
-                "img_card": "../img/item/pratododia.webp"
+                "nome": "Hambúrguer",
+                "desc": "Pão brioche, Hambúrguer Angus 400g, Alface, Tomate, Maionese do Chef, Queijo Cheddar. Acompanha Batata Frita temperada.", 
+                "preco": 24.90,
+                "img_card": "../img/salgado/burguer.jpg"
             },
             {
-                "nome": "Macarronofe",
-                "desc": "Prato do Dia com arroz, feijão e bife.", 
-                "preco": 19.90,
-                "img_card": "../img/item/macarronofe.webp"
+                "nome": "Pizza",
+                "desc": "Pizza Individual. Sabores disponíveis: Portuguesa, Quatro Queijos, Frango com Catupiry, Calabresa, Atum e Vegetariana.", 
+                "preco": 22.90,
+                "img_card": "../img/salgado/pizza.jpg"
+            },
+            {
+                "nome": "Croissant Recheado",
+                "desc": "Croissant aberto e recheado com: Presunto Parma ou Filé em Tiras, Queijo Brie ou Parmesão, Alface ou Rúcula.", 
+                "preco": 11.90,
+                "img_card": "../img/salgado/croissant.jpg"
+            },
+            {
+                "nome": "Salada",
+                "desc": "Salada de Mix de Folhas Verdes, acompanhada de Patê de Grão de Bico, tomate e proteína adicional (frango/carne em tiras ou ovo).", 
+                "preco": 18.50,
+                "img_card": "../img/salgado/salada.jpg"
+            },
+            {
+                "nome": "Tábua de Queijos",
+                "desc": "10 tipos de queijos diferentes, acompanhados de frutas da estação e castanhas. Não inclue bebida. Serve duas pessoas.", 
+                "preco": 9.90,
+                "img_card": "../img/salgado/tabua-queijo.jpg"
+            },
+            {
+                "nome": "Lasanha",
+                "desc": "Lasanha de queijo e presunto a bolonhesa.", 
+                "preco": 22.90,
+                "img_card": "../img/item/lasanha.webp"
+            },
+            {
+                "nome": "Lasanha",
+                "desc": "Lasanha de queijo e presunto a bolonhesa.", 
+                "preco": 22.90,
+                "img_card": "../img/item/lasanha.webp"
             },
             {
                 "nome": "Lasanha",
