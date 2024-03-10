@@ -41,13 +41,14 @@ h1, h2{
 .card{
     border-color: #480000 !important;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transition: all 500ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
 .card:hover{
     transform: scale(1.1);
-    transition: all 500ms ease-in-out;
+    transition: all 250ms ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index: 30;
 }
 
 .hidden {
@@ -133,4 +134,18 @@ header{
 #cardapio-titulo {
     color:white;
     text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.item-price {
+    background-color:#830000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn-group-card {
+    margin: 0 !important;
+    width: 100%;
 }

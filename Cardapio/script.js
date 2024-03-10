@@ -140,12 +140,27 @@ const hydrate = async () => {
             cardText.textContent = item.desc;
             cardBody.appendChild(cardText);
 
+            cardButtonGroup = document.createElement('div');
+            cardButtonGroup.classList.add('btn-group');
+            cardButtonGroup.classList.add('btn-group-card');
+            cardButtonGroup.setAttribute('role', 'group');
             cardButton = document.createElement('a');
             cardButton.classList.add('btn');
             cardButton.classList.add('btn-danger');
             cardButton.onclick = () => {adicionarSacola(item)};
-            cardButton.textContent = "+ Adicionar na Sacola";
-            cardBody.appendChild(cardButton);
+            cardButtonIcon = document.createElement('span');
+            cardButtonIcon.classList.add('material-symbols-outlined');
+            cardButtonIcon.textContent = "add"
+            cardButton.appendChild(cardButtonIcon);
+            cardButton.innerHTML += "Adicionar na Sacola";
+            cardPriceBadge = document.createElement('div');
+            cardPriceBadge.classList.add('item-price');
+            cardPriceBadge.classList.add('badge');
+            cardPriceBadge.classList.add('text-bg-light');
+            cardPriceBadge.textContent = `R$ ${item.preco.toFixed(2)}`;
+            cardButtonGroup.appendChild(cardButton);
+            cardButtonGroup.appendChild(cardPriceBadge);
+            cardBody.appendChild(cardButtonGroup);
 
             cardDiv.appendChild(cardBody);
 
