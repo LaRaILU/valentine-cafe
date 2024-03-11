@@ -143,9 +143,12 @@ header{
     justify-content: center;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: fit-content;
 }
 
 .btn-group-card {
     margin: 0 !important;
     width: 100%;
+    flex-wrap: nowrap;
 }
