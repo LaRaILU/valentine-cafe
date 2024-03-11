@@ -76,7 +76,7 @@
             {
                 "nome": "Tiramisu",
                 "desc": "Tiramisu Tradicional e Individual. Pedaço de 350g.", 
-                "preco": 19.00,
+                "preco": 17.00,
                 "img_card": "../img/sobremesa/tiramisu1.webp"
             },
             {
@@ -118,7 +118,7 @@
             {
                 "nome": "Mousse",
                 "desc": "Mousse Cremoso (Maracujá, Morango, Chocolate). Porção Individual.", 
-                "preco": 14.50,
+                "preco": 12.50,
                 "img_card": "../img/sobremesa/mousse.webp"
             },
             {
@@ -141,79 +141,79 @@
             {
                 "nome": "Água Mineral 500ml",
                 "desc": "Garrafa de água mineral de 500ml", 
-                "preco": 22.90,
+                "preco": 5.90,
                 "img_card": "../img/bebida/agua.webp"
             },
             {
                 "nome": "Suco Natural",
                 "desc": "Suco natural batido na hora! Confira sabores.", 
-                "preco": 19.90,
+                "preco": 10.90,
                 "img_card": "../img/bebida/suco.webp"
             },
             {
                 "nome": "Chá Gelado",
                 "desc": "Chá Gelado a base de Monin ou Twinings. Confira Sabores.", 
-                "preco": 14.90,
+                "preco": 11.90,
                 "img_card": "../img/bebida/cha-gelado.webp"
             },
             {
                 "nome": "Café Gelado",
                 "desc": "Café Expresso, água com gás ou leite gelado e Monin. Confira Sabores.", 
-                "preco": 14.90,
+                "preco": 12.90,
                 "img_card": "../img/bebida/cafe-gelado.webp"
             },
             {
                 "nome": "Soda Italiana",
                 "desc": "Água com gás e Monin. Confira Sabores.", 
-                "preco": 14.90,
+                "preco": 12.90,
                 "img_card": "../img/bebida/soda.webp"
             },
             {
                 "nome": "Refrigerante",
                 "desc": "Coca Cola, Sprite, Fanta, Pepsi e Guaraná Antártica", 
-                "preco": 14.90,
+                "preco": 6.90,
                 "img_card": "../img/bebida/refrigerante.webp"
             },
             {
                 "nome": "Milkshake",
                 "desc": "Bebida batida a base de leite e sorvete. Confira Sabores.", 
-                "preco": 14.90,
+                "preco": 11.90,
                 "img_card": "../img/bebida/milkshake.webp"
             },
             {
                 "nome": "Café",
                 "desc": "Coado ou Expresso. Com leite ou sem.", 
-                "preco": 14.90,
+                "preco": 5.90,
                 "img_card": "../img/bebida/cafe.webp"
             },
             {
                 "nome": "Chá",
                 "desc": "Chá Twinings. Confira Sabores.", 
-                "preco": 14.90,
+                "preco": 4.99,
                 "img_card": "../img/bebida/cha.webp"
             },
             {
                 "nome": "Chocolate Quente",
                 "desc": "Bebida Quente a base de leite, achocolatado e chocolate ao leite em pedaços", 
-                "preco": 14.90,
+                "preco": 10.90,
                 "img_card": "../img/bebida/choc-quente.webp"
             },
             {
                 "nome": "Vinho",
                 "desc": "Seleções Argentinas, Portuguesas, Espanholas e Chilenas. Confira os rótulos.", 
-                "preco": 14.90,
+                "preco": 64.00,
                 "img_card": "../img/bebida/vinho.webp"
             },
             {
                 "nome": "Champagne",
                 "desc": "Seleções Francesas, Italianas, Espanholas e Portuguesas. Confira os rótulos.", 
-                "preco": 14.90,
+                "preco": 60.50,
                 "img_card": "../img/bebida/champanhe.webp"
             },
             {
                 "nome": "Cerveja",
                 "desc": "Brahma, Itaipava, Kaiser, Bohemia, Amstel, Heineken, Budweiser e Artesanais", 
-                "preco": 14.90,
+                "preco": 12.90,
                 "img_card": "../img/bebida/cerveja.webp"
             },
             {
