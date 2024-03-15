@@ -152,3 +152,9 @@ header{
     width: 100%;
     flex-wrap: nowrap;
 }
+
+@media (width <= 600px) {
+    #nome-print {
+        display: none;
+    }
+}
